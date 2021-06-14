@@ -1,6 +1,7 @@
 package com.cyient.base;
 
 import java.util.concurrent.TimeUnit;
+import com.cyient.uilites.ScreenshotUtils;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -38,11 +39,15 @@ public class Online {
 	}
 
 
-	//@AfterMethod
-	/*public void teardown()
+	@AfterMethod
+	public void teardown()
 	{
 		driver.quit();
-	}*/
+	}
+	
+	ScreenshotUtils.takeScreenShot(driver);
 }
+
+
 
 
