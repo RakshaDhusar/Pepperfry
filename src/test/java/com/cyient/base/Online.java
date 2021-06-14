@@ -39,13 +39,13 @@ public class Online {
 	}
 
 
-	@AfterMethod
-	public void teardown()
+	//@AfterMethod
+	/*public void teardown()
 	{
 		driver.quit();
-	}
+	}*/
 	
-	ScreenshotUtils.takeScreenShot(driver);
+	//ScreenshotUtils.takeScreenShot(driver);
 }
 
 

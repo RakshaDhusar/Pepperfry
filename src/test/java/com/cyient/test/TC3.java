@@ -60,7 +60,7 @@ public class TC3 extends Online {
 		selectState.selectByVisibleText("Uttar Pradesh");
 		
 		
-		driver.findElement(By.xpath(" //input[@id='country_id]"));
+		
 		
 		
 		
