@@ -46,11 +46,12 @@ public class TC3 extends Online {
 		}
 		driver.findElement(By.xpath("//a[normalize-space()='Add to Cart']")).click();
 		driver.findElement(By.xpath(" //a[@id='vipGoToCartButton']")).click();
-		driver.findElement(By.xpath(" //a[@class='']")).click();
+		driver.findElement(By.xpath("( //a[contains(text(),'PLACE ORDER')])[1]")).click();
 		
 		
-		driver.findElement(By.xpath("//input[@id='nCheckout-userEmail']")).sendKeys("RD@gmail.com");
-		driver.findElement(By.xpath("//label[normalize-space()='I Have A Password']")).click();
+		driver.findElement(By.xpath("//input[@id='nCheckout-userEmail']")).sendKeys("SAK@gmail.com");
+		driver.findElement(By.xpath("//li[@class='nCheckoutLIactive']")).click();
+		driver.findElement(By.xpath("//label[contains(text(),'I Have A Password')]")).click();
 		driver.findElement(By.xpath("//input[@id='name']")).sendKeys("Rak");
 		driver.findElement(By.xpath("//input[@id='postcode']")).sendKeys("2345678");
 		driver.findElement(By.xpath("//textarea[@id='street']")).sendKeys("45,hfddcvbg");
