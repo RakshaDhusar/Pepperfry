@@ -4,7 +4,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.Select;
 
-public class LoginPage {
+public class CheckoutPage {
 	private By usernameLocator = By.id("authUser");
 	private By emailLocator=By.name("email");
 	private By passwordLocator=By.id("clearPass");
@@ -15,7 +15,7 @@ public class LoginPage {
 	private WebDriver driver;
 	private CharSequence email;
 
-	public LoginPage(WebDriver driver) {
+	public CheckoutPage(WebDriver driver) {
 		this.driver = driver;
 	}
 

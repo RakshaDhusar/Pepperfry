@@ -11,7 +11,7 @@ import java.util.concurrent.*;
 public class DataValidUilites {
 	
 	
-	public Object[][] validCredentialData(){
+	/*public Object[][] validCredentialData(){
 	
 		Object[][] main=new Object[1][3];
 		
@@ -28,20 +28,20 @@ public class DataValidUilites {
 	
 		
 		return main;
-	}
+	}*/
 	
 	
 	
-	
-	public Object[][] validCredentialExcelData() throws IOException
+	@DataProvider
+	public Object[][] userdata() throws IOException
 	{
-		Object[][] main= ExcelUtilies.getSheetIntoObjectArray("src/test/resources/TestData/HomeDelivery.xlsx", "validCredentialExcelData"); 
+		Object[][] main= ExcelUtilies.getSheetIntoObjectArray("src/test/resources/TestData/HomeDelivery.xlsx", "RegisterData"); 
 		
 		return main;
 	}
 	
 	
-	public Object[][] validClData(){
+	/*public Object[][] validClData(){
 		
 		Object[][] main=new Object[1][6];
 		
@@ -69,5 +69,5 @@ public class DataValidUilites {
 		Object[][] main= ExcelUtilies.getSheetIntoObjectArray("src/test/resources/TestData/Payment Report.xlsx", "validCredentialExcelData"); 
 		
 		return main;
-	}
+	}*/
 }
