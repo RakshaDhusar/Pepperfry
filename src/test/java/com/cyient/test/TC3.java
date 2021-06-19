@@ -60,6 +60,7 @@ public class TC3 extends Online {
 		Select selectState=new Select(driver.findElement(By.id("region")));
 		selectState.selectByVisibleText("Uttar Pradesh");
 		
+		driver.findElement(By.xpath("//button[normalize-space()='SAVE & CONTINUE']")).click();
 		
 		
 		
