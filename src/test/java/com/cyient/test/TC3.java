@@ -53,9 +53,9 @@ public class TC3 extends Online {
 		driver.findElement(By.xpath("//li[@class='nCheckoutLIactive']")).click();
 		driver.findElement(By.xpath("//label[contains(text(),'I Have A Password')]")).click();
 		driver.findElement(By.xpath("//input[@id='name']")).sendKeys("Rak");
-		driver.findElement(By.xpath("//input[@id='postcode']")).sendKeys("2345678");
+		driver.findElement(By.xpath("//input[@id='postcode']")).sendKeys("284002");
 		driver.findElement(By.xpath("//textarea[@id='street']")).sendKeys("45,hfddcvbg");
-		driver.findElement(By.xpath("//input[@id='city']")).sendKeys("Agra");
+		driver.findElement(By.xpath("//input[@id='city']")).sendKeys("Jhansi");
 		
 		Select selectState=new Select(driver.findElement(By.id("region")));
 		selectState.selectByVisibleText("Uttar Pradesh");
